@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#00ffea), to(#00ff0d));
+  background: linear-gradient(90deg, #00ffea, #00ff0d);
+}
+
+.header {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+}
+
+.board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+  color: white;
+  margin: 0;
+}
+
+.board #board {
+  display: block;
+}
+
+.board #board td {
+  padding: 1vh;
+  border: 2px solid white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4vh;
+}
+
+.board #board td:hover {
+  cursor: pointer;
+}
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input input {
+  height: 4vh;
+  width: 60vh;
+  font-size: 4vh;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20vh;
+  width: 100%;
+}
+
+.button button {
+  background: none;
+  height: 10vh;
+  width: 70vh;
+  border-radius: 20vh;
+  border: 2px solid white;
+  outline: none;
+  cursor: pointer;
+  font-size: 6vh;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.button button:hover {
+  background-color: rgba(128, 128, 128, 0.486);
+}
+
+.count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.count h2 {
+  font-family: 3vh;
+}
+/*# sourceMappingURL=style.css.map */
