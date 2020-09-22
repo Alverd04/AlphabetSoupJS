@@ -2,22 +2,24 @@
 
 var board_size = 9
 var board = createBoard(board_size)
-
-
-
-// Main 
+ 
 createHtmlBoard(board)
+
+// Triggers
 
 $('#solve-btn').click({board}, function () { 
     var user_input = $('#input').val().toUpperCase()
     solve(user_input, board)
 });
-
-
-
-
+$('#input').keypress(function (e) {
+    var key = e.which;
+    if(key == 13)  // the enter key code
+     {
+         var user_input = $('#input').val().toUpperCase()
+        solve(user_input, board)
+     }
+   }); 
 // Functions 
-
 
 function createBoard(board_size){
     var board = []
@@ -48,8 +50,10 @@ function solve(user_input, board){
 
     // We have to clean board in every new search!
     $('#board td').each(function(){
-        $(this).css('background', 'none')
-        $(this).css('color', 'white')
+        if($(this).css('background-color') == 'rgb(255, 255, 0)'){
+            $(this).css('background', 'rgb(0, 255, 13)')
+            $(this).css('color', 'white')
+        }
     })
 
 
